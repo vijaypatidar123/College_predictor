@@ -1,0 +1,145 @@
+body {
+    background: #3f048d;
+    font-family: Arial, sans-serif;
+}
+header {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:10px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: black;
+
+} 
+.navigation a {
+    position: relative;
+    font-size:0.8cm;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+
+}
+.navigation .btnLogout-popup {
+
+    width: 130px;
+    height: 50px;
+   
+    border-radius: 2px solid black;
+    background-color: red;
+    outline:none;
+    border-radius:6px ;
+    cursor: pointer;
+    font-size: 0.8cm;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    
+    
+}
+
+ .navigation .btnLogout-popup:hover{
+    background: rgb(15, 175, 233);
+    color: #162938;
+    }
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to left, #49365f, #4b8ee0);
+    width: 750px;
+    height: 7z00px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group select,
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #6b5eae ;
+}
+
+.form-group select {
+    height: 34px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+   
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+        
+
+        .box {
+            width: 400px;
+            height: 300px;
+            margin: 50px auto;
+            background: linear-gradient(to bottom, #370874, #4b8ee0);
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+           
+        }
+        
+
+        .moving-links {
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            right: 0px;
+            bottom: 0;
+            animation: moveLinks 6s linear infinite;
+        }
+        @keyframes moveLinks {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+    
+        .link-item {
+            padding: 10px;
+            margin: 5px;
+            
+            color: black;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+    
+        .link-item:hover {
+            background-color: #40118d;
+            
+        }
